@@ -1,0 +1,69 @@
+body{
+background: #553333;
+font-size: small;
+font-family: Verdana, Helvetica, Arial, sans-serif;
+line-height: 1.6em;
+}
+h1,h2{
+color:#00b0b0;
+}
+h1{
+font-size: 150%;
+}
+h2{
+font-size: 130%;
+}
+
+a{
+color:black;
+}
+.Nootropic{
+background: #ccddcc;
+border-color: black;
+border-width: thin;
+border-style: solid;
+border-top-color: black;
+border-top-style:double;
+border-top-width: medium;
+padding: 25px;
+padding-left: 10px;
+margin: 30px;
+margin-right: 200px;
+color:#444444;
+font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.Exercise{
+border-color: black;
+border-width: thin;
+border-style: solid;
+border-top-color: black;
+border-top-style:double;
+border-top-width: medium;
+background-color:#eebb55;
+padding: 25px;
+padding-left: 10px;
+margin: 30px;
+margin-right: 200px;
+color:#333333;
+font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.Resources{
+border-color: black;
+border-width: thin;
+border-style: solid;
+border-top-color: black;
+border-top-style:double;
+border-top-width: medium;
+background-color:#992299;
+padding: 25px;
+padding-left: 10px;
+margin: 30px;
+margin-right: 200px;
+color:#222222;
+font-family: Georgia, "Times New Roman", Times, serif;
+}
+.Resources h2{
+color: #111111;
+}

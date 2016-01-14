@@ -1,0 +1,74 @@
+body{
+background-color: #ab1340;
+background-image: url("../png/templeBackground.png");
+background-repeat: no-repeat;
+background-position: right top;
+margin-left: 10%;
+margin-right: 10%;
+border: 2px dotted black;
+padding: 10px;
+font: medium Geneva, Verdana, sans-serif;
+color: #444444;
+}
+h1,h2{
+color:#333333;
+}
+h1{
+border-bottom: thin dotted #888888;
+}
+h2,h3{
+font-weight: normal;
+}
+
+
+#header{
+}
+
+#footer{
+font-size: small;
+font-family: monospace;
+width: 250px;
+text-align: center;
+padding: 20px;
+margin: 20px;
+}
+
+li{
+list-style-image: url(../icons/smallNav.gif);
+padding-top: 5px;
+margin-left: 20px;
+}
+
+nav{
+background-color: #000000;
+margin: 10px;
+}
+
+nav ul{
+background-color: #ab0040;
+margin: 10px;
+list-style-type: none;
+padding: 5px;
+}
+
+nav ul li{
+display: inline;
+padding: 5px;
+}
+
+nav ul li a:link, nav ul li a:visited{
+color: #ffffff;
+border-bottom: none;
+font-weight: bold;
+}
+
+nav ul li.selected{
+background-color: #cccccc;
+}
+
+a:link{
+color: #005599;
+}
+a:visited{
+color: #009999;
+}

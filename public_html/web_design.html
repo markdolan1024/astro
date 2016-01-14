@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+		<title> Web Design</title>
+		<meta name="Description" content="Mark Dolan's Temple University Astro Page">
+		<meta charset="utf-8">
+<!-- JavaScript -->
+		<script src="assets/js/jquery-1.11.2.min.js"></script>
+		<script src="assets/js/dolan_jquery.js"></script> <!-- brings in links and footer -->
+		<script src="assets/js/respond.js"></script>
+<!-- Bootstrap -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/custom.css" rel="stylesheet">
+<!-- CSS -->
+		<link href="assets/css/dolan_custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+		<div class="row">
+				<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+						<div class="navbar-header">
+								<button type"button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+										<span class="sr-only">Toggle Navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										MENU
+								</button>          
+						</div>
+						<div class="collapse navbar-collapse" id="collapse">
+								<ul class="nav navbar-nav">          
+										<li><a href="index.html">Home Page</a></li>
+										<li class="active"><a href="web_design.html">Web Design</a></li>
+										<li><a href="web_programs.html">Web Programs</a></li>
+										<li><a href="learning_resources.html">Learning Resources</a></li>
+										<li><a href="health.html">Health</a></li>
+										<li><a href="about_me.html">About Me</a></li>               
+								</ul>
+						</div>
+				</nav>
+		</div>
+<!-- End Navigation Bar -->
+<!-- Main Content Resume Tabs -->
+
+
+<!-- Navigation for Tab Content -->
+<div class="container-fluid">
+		<div id="studio" class="row">
+				<div class="row">
+						<ul class="nav nav-sidebar nav-pills nav-justified">  
+						<li><a href="#png" data-toggle="tab">PNG's</a></li>
+						<li class="active"><a href="#jpg" data-toggle="tab">JPG's</a></li>                                                                       
+						<li><a href="#gif" data-toggle="tab">GIF's</a></li>
+						</ul>
+				</div>
+
+<!-- Detailed Inofrmation -->
+			<div class="col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-2 tab-content">
+				<div class="tab-pane fade" id="png">
+						<img src="assets/images/temple_university.png">
+						<img src="assets/images/temple_background.png">
+						<img src="assets/images/board_final.png">
+						<img src="assets/images/pig.png">
+				</div>
+				<div class="tab-pane fade active in" id="jpg">
+						<img src="assets/images/temple_university.jpg">
+						<img src="assets/images/background2.jpg">
+						<img src="assets/images/skyline1.jpg">
+						<img src="assets/images/barnes1.jpg">
+						<img src="assets/images/background_white1.jpg">
+				</div>
+				<div class="tab-pane fade" id="gif">
+						<img src="assets/images/chpswAnimated.gif">
+						<img src="assets/images/book2.gif">
+						<img src="assets/images/pig2.gif">
+				</div>
+			</div><!-- end tab content -->
+
+		</div><!-- end row -->
+</div> <!-- end container -->
+
+<!-- javascript -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script>
+				$('a.btn-info').tooltip()
+		</script>
+
+</body>
+</html>

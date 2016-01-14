@@ -1,0 +1,39 @@
+body{
+background-color: #3d030b;/*#fc1257;*/ /*#d2b48c;*/
+margin-left: 10%;
+margin-right: 10%;
+border: 2px dotted black;
+padding: 10px;
+font: medium Geneva, Verdana, sans-serif;
+color: #b0283b;
+}
+h1,h2{
+color:#d01a34;
+}
+h1{
+border-bottom: thin dotted #888888;
+}
+h2,h3{
+font-weight: normal;
+}
+a{
+color:#c98bc2;
+}
+
+#header{
+}
+
+#footer{
+font-size: small;
+font-family: monospace;
+width: 250px;
+text-align: center;
+padding: 20px;
+margin: 20px;
+}
+
+li{
+list-style-image: url(../icons/smallNav.gif);
+padding-top: 5px;
+margin-left: 20px;
+}

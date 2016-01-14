@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link href="https://s3.amazonaws.com/codiqa-cdn/codiqa.ext.css" rel="stylesheet">
+  <link href="https://s3.amazonaws.com/codiqa-cdn/mobile/1.4.0/jquery.mobile-1.4.0.css" rel="stylesheet">
+  <!-- Use Google TTS v1.0 -->
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/google-tts.min.js"></script>
+  <script src="js/soundmanager2.js"></script>
+  <script src="js/speakGenerator.js"></script>
+  <script src="js/cookie.js"></script>
+  <script src="js/CIS2305_Lab1.js"></script>
+  <script src="https://s3.amazonaws.com/codiqa-cdn/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+  <script src="https://s3.amazonaws.com/codiqa-cdn/codiqa.ext.js"></script>
+	<style>
+	#page1 {background:#efefef;}
+	.Headerx{background:#222222;}
+	</style>
+</head>
+<body>
+<div data-role="page" data-control-title="Home" id="page1">
+    <div role="main" class="ui-content">
+		<div id="Controls" data-role="navbar" data-iconpos="top">
+            <ul id="ulGroup">
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="" data-icon="star" id="btnStart">
+                        Start
+                    </a>
+                </li>
+				
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="" data-icon="refresh" id="btnListen">
+                        Listen
+                    </a>
+                </li>
+				
+            </ul>
+        </div>
+        <div class="ui-field-contain" data-controltype="textinput">
+            <input name="Input" id="Input" placeholder="spelling..." value="" type="text">
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true" id="List">
+            <li data-role="list-divider" role="heading">
+                Scores
+            </li>
+        </ul>
+    </div>
+	<div>
+	<p>
+	<h2>Rules</h2>
+	<ul>
+	<li>Click "Start" button</li>
+	<li>Click "Next Word" to hear the next word</li>
+	<li>Try to spell word correctly in text input box</li>
+	<li>Hit "Listen" button to hear word again</li>
+	<li>Click "Check Spelling" to score your answer</li>
+	<li>Click "Next Word" to hear the next word</li>
+	<li>Game goes to ten</li>
+	<li>Do your best!</li>
+	</ul>
+	</div>
+</div>
+
+</body>
+</html>

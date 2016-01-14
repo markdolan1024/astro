@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+		<title> Mark Dolan TU </title>
+		<meta name="Description" content="Mark Dolan's Temple University Astro Page">
+		<meta charset="utf-8">
+
+<!-- JavaScript -->
+		<script src="assets/js/jquery-1.11.2.min.js"></script>
+		<script src="assets/js/dolan_jquery.js"></script><!-- Brings in menu bar, links, and footer -->
+		<script src="assets/js/respond.js"></script>
+
+<!-- Bootstrap -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/custom.css" rel="stylesheet">
+
+<!-- CSS -->
+		<link href="assets/css/dolan_custom.css" rel="stylesheet">
+	
+</head>
+
+<body>
+<div class="container">
+
+<!-- Navigation Bar -->
+		<div class="row">
+				<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+						<div class="navbar-header">
+								<button type"button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+										<span class="sr-only">Toggle Navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										MENU
+								</button>          
+						</div>
+						<div class="collapse navbar-collapse" id="collapse">
+								<ul class="nav navbar-nav">          
+										<li><a href="index.html">Home Page</a></li>
+										<li><a href="web_design.html">Web Design</a></li>
+										<li><a href="web_programs.html">Web Programs</a></li>
+										<li class="active"><a href="learning_resources.html">Learning Resources</a></li>
+										<li><a href="health.html">Health</a></li>
+										<li><a href="about_me.html">About Me</a></li>               
+								</ul>
+						</div>
+				</nav>
+		</div>
+<!-- End Navigation Bar -->
+<!-- Main Content Resume Tabs -->
+
+
+<!-- Navigation for Tab Content -->
+		<div class="row">
+				<ul class="nav nav-tabs">  
+						<li class="active"><a href="#books" data-toggle="tab">Books</a></li>
+						<li><a href="#videos" data-toggle="tab">Videos</a></li>                                                                       
+						<li><a href="#other" data-toggle="tab">Other</a></li>
+				</ul>
+
+<!-- Detailed Inofrmation -->
+	<div class="tab-content">
+		<div class="tab-pane fade active in" id="books">
+				<p> <img src="thumbnails/headFirstJS.png"><br>
+				<span id="bom">"Head First JavaScript Programming"</span><br>
+				A great introductory JavaScript text, helpful if you have knowledge of HTML.<br>
+				This book is meant as a companion to <em>"Head First HTML and CSS"</em><br>
+				<a href="http://www.amazon.com/Head-First-JavaScript-Programming-Freeman/dp/144934013X/ref=sr_1_1?s=books&ie=UTF8&qid=1406295936&sr=1-1&keywords=java+script+head+first">
+				Amazon link</a>
+				</p>
+
+				<p> "Head First JavaScript Programming"
+				<a href="http://www.amazon.com/Head-First-JavaScript-Programming-Freeman/dp/144934013X/ref=sr_1_1?s=books&ie=UTF8&qid=1406295936&sr=1-1&keywords=java+script+head+first">
+				Amazon Link</a>
+				</p>
+
+				<p> <em>"Head First HTML and CSS"</em>
+				<a href="http://www.amazon.com/Head-First-HTML-Elisabeth-Robson/dp/0596159900/ref=sr_1_1?ie=UTF8&qid=1406295957&sr=8-1&keywords=head+first+html">
+				Amazon Link</a>
+				</p>
+
+				<p> "Computer Systems from a Programmer's Perspective"
+				<a href="http://www.amazon.com/Computer-Systems-Programmers-Perspective-2nd/dp/0136108040/ref=sr_1_71?s=books&ie=UTF8&qid=1406295275&sr=1-71&keywords=computer+science">
+				Amazon Link</a>
+				</p>
+
+		</div>
+		<div class="tab-pane fade " id="videos">
+		</div>
+		<div class="tab-pane fade" id="other">
+		</div>
+	</div><!-- end tab content -->
+</div><!-- end row -->
+
+
+<!-- Accordion for Links -->
+		<script>$(".container").append(link_string.join(" "));</script>
+
+</div> <!-- end container -->
+
+<!-- javascript -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script>
+				$('a.btn-info').tooltip()
+		</script>
+
+</body>
+</html>

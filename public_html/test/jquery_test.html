@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+		<title> Dolan Test jquery</title>
+		<meta name="Description" content="Mark Dolan's Temple University Astro Page">
+		<meta charset="utf-8">
+
+<!-- javascript -->
+		<script src="../assets/js/jquery-1.11.2.min.js"></script>
+		<script src="../assets/js/dolan_jquery.js"></script>
+	
+<!-- Bootstrap -->
+		<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../assets/css/custom.css" rel="stylesheet">
+</head>
+<body>
+
+<p id="first">Click and disappear</p>
+<script>$("#first").greenify();</script>
+<script>$("#first").after("<p>this was inserted with after</p>");</script>
+<script>$("#first").append("<p>this was inserted with append</p>");</script>
+<p>Click and disappear1</p>
+<p>Click and disappear2</p>
+<p>Click and disappear3</p>
+<p>Click and disappear4</p>
+<p>Click and disappear5</p>
+<button>Click Me</button>
+<h2 id="links">Links pull In </h2><h2 id="links">Links pull In </h2>
+<footer> </footer>
+
+		<!-- javascript -->
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script> $('a.btn-info').tooltip() </script>
+		<script src="../assets/js/respond.js"></script>
+		<script> $(document).ready(function(){
+				$("p").click(function(){
+					$(this).hide();
+				});
+				});
+		</script>
+
+</body>
+</html>

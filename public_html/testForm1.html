@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Enter the Contest</title>
+<link rel="stylesheet" type="text/css" href="styles/testForm.css">
+</head>
+<body>
+<h3>Type your name and hit submit to enter contest</h3>
+<form action="http://markelmerdolan.com/myScript.php" method="POST">
+<p>File:</p>
+<p> <input type="file" name="doc"> </p>
+<fieldset>
+<legend>General Info</legend>
+<div class="tableRow">
+<p>Characters: </p>
+<p>
+<select name="characters">
+<option value="Genghis">Genghis</option>
+<option value="Paris">Paris</option>
+<option value="Dracula">Dracula</option>
+<option value="Caesar">Caesar</option>
+</select>
+</p>
+</div>
+<div class="tableRow">
+<p>Mult Characters: </p>
+<p>
+<select name="multCharacters" multiple>
+<option value="Genghis">Genghis</option>
+<option value="Paris">Paris</option>
+<option value="Dracula">Dracula</option>
+<option value="Caesar">Caesar</option>
+</select>
+</p>
+</div>
+<div class="tableRow">
+<p>Number:</p>
+<p> <input type="number" min="0" max="20"> </p>
+</div>
+<div class="tableRow">
+<p>Date: </p>
+<p> <input type="date" name="date"> </p>
+</div>
+<div class="tableRow">
+<p>First name: </p>
+<p> <input type="text" name="firstName" value="" placeholder="Bleh"> </p>
+</div>
+<div class="tableRow">
+<p>Last name: </p>
+<p> <input type="text" name="lastName" value="" required> </p>
+</div>
+</fieldset>
+<div class="tableRow">
+<p>password:</p>
+<p><input type="password" name="secret"></p>
+</div>
+email: <input type="email" name="email" value=""><br>
+tel: <input type="tel" name="tel" value=""><br>
+Home Page: <input type="url" name="url" value=""><br>
+<input type="radio" name="hotorcold" value="hot" checked>
+<label for="hot">hot</label>
+<input type="radio" name="hotorcold" value="cold">
+<label for="cold">cold</label>
+<input type="checkbox" name="spice" value="Salt">Salt<br>
+<input type="checkbox" name="spice" value="Garlic">Garlic<br>
+<input type="checkbox" name="spice" value="Pepper">Pepper<br>
+<div class="tableRow">
+<p>Comments:</p>
+<p> <textarea name="comments" rows="10" cols="20"></textarea> </p>
+</div>
+<input type="range" min="0" max="20" step="5">
+<div class="tableRow">
+<input type="color">
+</div>
+<div class="tableRow">
+<p><input type="submit" value="Button that does nothing"></p>
+</div>
+</form>
+<h3><a href="index.html">Click Here for Home Page</A></h3>
+
+</body>
+</html>
