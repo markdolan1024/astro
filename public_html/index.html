@@ -7,16 +7,16 @@
 		<meta charset="utf-8">
 
 <!-- JavaScript -->
-		<script src="assets/js/jquery-1.11.2.min.js"></script>
-		<script src="assets/js/dolan_jquery.js"></script><!-- Brings in menu bar, links, and footer -->
-		<script src="assets/js/respond.js"></script>
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/app.js"></script><!-- Brings in menu bar, links, and footer -->
+		<script src="js/respond.js"></script>
 
 <!-- Bootstrap -->
-		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-		<link href="assets/css/custom.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 
 <!-- CSS -->
-		<link href="assets/css/dolan_custom.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	
 </head>
 
@@ -25,25 +25,40 @@
 <div class="container">
 
 <!-- Navigation Bar -->
-		<script>$(".container").append(nav_string.join(" "));</script>
+		<!-- <script>$(".container").append(nav_string.join(" "));</script> -->
 
 <!-- row 2: header Main Content-->
-		<header class="row">
-			<div class="col-lg-8 col-sm-5 banner">
-					<h2><a href="web_design.html">Web Design</a></h2>
-						<p>Web design stuff such as icons, banners, background images, and some javascript implementations</p>
-					<h2><a href="web_programs.html">Web Programs</a></h2>
-						<p>Web applications and games</p>
-					<h2><a href="learning_resources.html">Learning Resources</a></h2>
-						<p>Programming related books and videos that I liked and hated</p>
-					<h2><a href="health.html">Health</a></h2>
-						<p>Nutrition and Exercise information I liked and hated</p>
-					<h2><a href="about_me.html">About Me</a></h2>
-						<p>Basically an online resume</p>
-			</div>
-			<div class="col-lg-6 col-sm-7">
-			</div>
-		</header>
+<div id="about_me" class="row">
+	<div class="col-xs-12">
+	<h3>Welcome To Mark Dolan's Home Page</h3>
+	</div>
+	<div class="col-xs-4">
+		<img src="images/Mark_dolan.jpg">
+	</div>
+	<div class="clearfix visible-xs-block"></div>
+	<div class="col-xs-8">
+		<h3>About Me</h3>
+		<p>I am a Marine Corps Veteran and graduated from Temple University in the Fall of 2015.  I am a web and mobile programmer with a focus on JavaScript, PHP, and MySQL</p>
+	</div>
+</div>
+<div id="my_projects" class="row">
+
+	<div class="col-xs-4">
+		<h3>My Projects</h3>
+	</div>
+	<div class="col-xs-8">
+		<dl>
+			<dt><h3><a href="http://sciencetap.us/">Sciencetap</a></h3></dt>
+			<dd>A Project for developing a mobile and web application for helping Scientists collect field data</dd>
+			<button id="sciencetap_btn" type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#mainModal" onclick="displaySciencetapModal()">View More Details</button>
+		</dl>
+		
+		<h3>Yelp</h3>
+		<h3>SVG Drawer</h3>
+		<h3>Battle For Wesnoth</h3>
+	</div>
+</div>
+
 <!-- end Main Content -->
 
 <!-- Accordion for Links -->
@@ -52,10 +67,27 @@
 </div> <!-- end container -->
 
 <!-- javascript -->
-		<script src="assets/js/bootstrap.min.js"></script>
+		
 		<script>
 			$('a.btn-info').tooltip()
 		</script>
-
+		
+<div class="modal fade" id="mainModal" tabindex="-1" role="dialog" arialabelledby="mainModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button id="modalCloseX" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="mainModalLabel"></h4>
+			</div>
+			<div class="modal-body">
+				<div id="mainModalBody" class="row">
+				</div>
+				<div class="modal-footer">
+					<button id="modalCloseBtn" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
 </html>

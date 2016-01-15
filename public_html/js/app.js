@@ -1,9 +1,55 @@
-// Mark Dolan custom jquery functions
+// Mark Dolan Astro Functions
 // link_string - brings in links accordion and footer
+
+
 
 $.fn.greenify = function(){
 	this.css("color","green");
 };
+
+function displaySciencetapModal(){
+	$("#mainModalLabel").html("Sciencetap Project");
+	var dataElement = '<div class="col-xs-12">' +
+		'<h3>Overview</h3>' +
+		'<p>' +
+		'The Sciencetap Project facilitates the process of collecting field data by allowing users to create projects and sites that specify where the data is being collected.  The user can then create forms for the required data, and when an approved user is in the field they can view this form and submit data.  The data is stored in a server and keeps track of the latitude and longitude as well as time the data was submitted.' +
+		'</p>' +
+		'</div>' +
+		'<div class="col-xs-12">' +
+		'<h3>Software Used</h3>' +
+		'<ul>' +
+		'<li><a href="http://ionicframework.com/" target="_blank">Ionic Framework</a></li>' +
+		'<li><a href="https://angularjs.org/" target="_blank">AngularJS</a></li>' +
+		'<li><a href="http://php.net/" target="_blank">PHP</a></li>' +
+		'<li><a href="http://www.mysql.com/" target="_blank">MySQL</a></li>' +
+		'</ul>' +
+		'</div>' +
+		'<div class="col-xs-4">' +
+		'<h3>Screenshots</h3>' +
+		'<table id="screenshots">' +
+		'<tr>' +
+		'<td class="screenshot"><a href="images/sciencetap_1.png"><img src="images/sciencetap_1.png" class="thumb"></a></td>' +
+		'<td class="screenshot"><a href="images/sciencetap_2.png"><img src="images/sciencetap_2.png" class="thumb"></a></td>' +
+		'<td class="screenshot"><a href="images/sciencetap_3.png"><img src="images/sciencetap_3.png" class="thumb"></a></td>' +
+		'<td class="screenshot"><a href="images/sciencetap_4.png"><img src="images/sciencetap_4.png" class="thumb"></a></td>' +
+		'</tr>' +
+		'</table>' +
+		'</div>';
+	$("#mainModalBody").append(dataElement);
+	$("#modalCloseX").on('click.ns', function(){
+		resetMainModal();
+	});
+	$("#modalCloseBtn").on('click.ns', function(){
+		resetMainModal();
+	});
+}
+
+function resetMainModal(){
+	$("#mainModalLabel").html('');
+	$("#mainModalBody").html('');
+	$("#modalCloseX").unbind('click.ns');
+	$("#modalCloseBtn").unbind('click.ns');
+}
 
 var link_string =  [
 		"<h3>Links</h3>",
@@ -112,9 +158,8 @@ var link_string =  [
 						"<p> ",
 						"Contact Info:<br>",
 						"Mark Elmer Dolan<br>",
-						"Temple University CS Student<br>",
-						"1936 Girard Ave<br>",
-						"Philadelphia, PA 19130<br>",
+						"756 Humphreys Rd<br>",
+						"Ardmore, PA 19003<br>",
 						"484-784-7894<br>",
 						"markdolan1024@gmail.com<br>",
 						"tue79412@temple.edu<br>",
