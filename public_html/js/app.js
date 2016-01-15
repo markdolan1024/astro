@@ -8,11 +8,12 @@ $.fn.greenify = function(){
 };
 
 function displaySciencetapModal(){
+	resetMainModal();
 	$("#mainModalLabel").html("Sciencetap Project");
 	var dataElement = '<div class="col-xs-12">' +
 		'<h3>Overview</h3>' +
 		'<p>' +
-		'The Sciencetap Project facilitates the process of collecting field data by allowing users to create projects and sites that specify where the data is being collected.  The user can then create forms for the required data, and when an approved user is in the field they can view this form and submit data.  The data is stored in a server and keeps track of the latitude and longitude as well as time the data was submitted.' +
+		'The Sciencetap Project facilitates the process of collecting field data by allowing users to create projects and sites that specify where data is being collected.  The user can then create forms for that site which specifies the data that needs to be collected. When an approved user is in the field they can view this form and submit data.  The data is stored in a server as well as the latitude, longitude, and timestamp for the data submission.' +
 		'</p>' +
 		'</div>' +
 		'<div class="col-xs-12">' +
@@ -34,16 +35,47 @@ function displaySciencetapModal(){
 		'<td class="screenshot"><a href="images/sciencetap_4.png"><img src="images/sciencetap_4.png" class="thumb"></a></td>' +
 		'</tr>' +
 		'</table>' +
+		'</div>'+
+		'<div class="col-xs-12">' +
+		'<h3>Links</h3>' +
+		'<ul>' +
+		'<li><a href="http://sciencetap.us/" target="_blank">Sciencetap Home Page</a></li>' +
+		'<li><a href="https://github.com/markdolan1024/Sciencetap.git" target="_blank">GitHub Repo</a></li>' +
+		'</ul>' +
 		'</div>';
 	$("#mainModalBody").append(dataElement);
-	$("#modalCloseX").on('click.ns', function(){
-		resetMainModal();
-	});
-	$("#modalCloseBtn").on('click.ns', function(){
-		resetMainModal();
-	});
 }
 
+function displayYelpModal(){
+	resetMainModal();
+	$("#mainModalLabel").html("Yelp Redo Project");
+	var dataElement = '<div class="col-xs-12">' +
+		'<h3>Overview</h3>' +
+		'<p>' +
+		'Yelp is a great way for people to find and share information about local businesses, but it can do much more than that.  Once you create an account, you can follow people, check-in, view your order history and group reviews into your own lists.  This app is mainly concerned with storing business information and writing reviews.' +
+		'</p>' +
+		'<p>The source code belongs to a private repository</p>' +
+		'</div>' +
+		'<div class="col-xs-12">' +
+		'<h3>Software Used</h3>' +
+		'<ul>' +
+		'<li><a href="http://ionicframework.com/" target="_blank">Ionic Framework</a></li>' +
+		'<li><a href="https://angularjs.org/" target="_blank">AngularJS</a></li>' +
+		'<li><a href="http://php.net/" target="_blank">PHP</a></li>' +
+		'<li><a href="http://www.mysql.com/" target="_blank">MySQL</a></li>' +
+		'<li><a href="https://jquery.com/" target="_blank">jQuery (website only) </a></li>' +
+		'</ul>' +
+		'</div>' +
+		'<div class="col-xs-4">' +
+		'<h3>Screenshots</h3>' +
+		'<table id="screenshots">' +
+		'<tr>' +
+		'<td class="screenshot"><a href="images/yelp_1.jpg"><img src="images/yelp_1.jpg" class="thumb"></a></td>' +
+		'</tr>' +
+		'</table>' +
+		'</div>';
+	$("#mainModalBody").append(dataElement);
+}
 function resetMainModal(){
 	$("#mainModalLabel").html('');
 	$("#mainModalBody").html('');
@@ -52,7 +84,7 @@ function resetMainModal(){
 }
 
 var link_string =  [
-		"<h3>Links</h3>",
+		"<h3>Other Links</h3>",
 				"<div class=\"panel-group\" id=\"accordion\">",
 						"<div class=\"panel panel-default\">",
 								"<div class=\"panel-heading\">",
