@@ -76,6 +76,80 @@ function displayYelpModal(){
 		'</div>';
 	$("#mainModalBody").append(dataElement);
 }
+
+function displayPPModal(){
+	resetMainModal();
+	$("#mainModalLabel").html("Programmer's Paint");
+	var dataElement = '<div class="col-xs-12">' +
+		'<h3>Overview</h3>' +
+		'<p>' +
+		'Programmer\'s Paint is a web application that allows users to draw state machines to model their programs.  The program will add circles representing states and dynamically connect states with lines representing transition functions.  The data is stored in a MySQL database for saving changes and loading old state machines.  In the works is the ability to draw UML diagrams.' +
+		'</p>' +
+		'</div>' +
+		'<div class="col-xs-12">' +
+		'<h3>Software Used</h3>' +
+		'<ul>' +
+		'<li><a href="https://jquery.com/" target="_blank">jQuery</a></li>' +
+		'<li><a href="http://php.net/" target="_blank">PHP</a></li>' +
+		'<li><a href="http://www.mysql.com/" target="_blank">MySQL</a></li>' +
+		'</ul>' +
+		'</div>' +
+		'<div class="col-xs-4">' +
+		'<h3>Screenshots</h3>' +
+		'<table id="screenshots">' +
+		'<tr>' +
+		'<td class="screenshot"><a href="images/pp_1.jpg"><img src="images/pp_1.jpg" class="thumb"></a></td>' +
+		'<td class="screenshot"><a href="images/pp_2.jpg"><img src="images/pp_2.jpg" class="thumb"></a></td>' +
+		'</tr>' +
+		'</table>' +
+		'</div>' +
+		'<div class="col-xs-12">' +
+		'<h3>Links</h3>' +
+		'<ul>' +
+		'<li><a href="https://github.com/markdolan1024/Programmer-s-Paint.git" target="_blank">GitHub Repo</a></li>' +
+		'</ul>' +
+		'</div>';
+	$("#mainModalBody").append(dataElement);
+}
+
+function displayWesnothModal(){
+	resetMainModal();
+	$("#mainModalLabel").html("The Battle For Wesnoth");
+	var dataElement = '<div class="col-xs-12">' +
+		'<h3>Overview</h3>' +
+		'<p>' +
+		'The Battle For Wesnoth is a free, open-source, turn-based strategy game.  It has different races such as elves, orcs, and humans, and allows you to level up and recall veterans from previous scenarios.  I think it\'s really cool and addicting.  Right now I\'m just messing around with Wesnoth Markup Language (WML), but I hope to contribute to the game in the future.' +
+		'</p>' +
+		'</div>' +
+		'<div class="col-xs-12">' +
+		'<h3>Software Used</h3>' +
+		'<ul>' +
+		'<li><a href="http://wiki.wesnoth.org/ReferenceWML" target="_blank">Wesnoth Markup Language</a></li>' +
+		'<li><a href="http://www.lua.org/" target="_blank">Lua</a></li>' +
+		'<li><a href="https://en.wikipedia.org/wiki/C%2B%2B target="_blank">C++</a></li>' +
+		'</ul>' +
+		'</div>' +
+		'<div class="col-xs-4">' +
+		'<h3>Screenshots</h3>' +
+		'<table id="screenshots">' +
+		'<tr>' +
+		'<td class="screenshot"><a href="images/wesnoth_1.jpg"><img src="images/wesnoth_1.jpg" class="thumb"></a></td>' +
+		'<td class="screenshot"><a href="images/wesnoth_2.jpg"><img src="images/wesnoth_2.jpg" class="thumb"></a></td>' +
+		'<td class="screenshot"><a href="images/wesnoth_3.jpg"><img src="images/wesnoth_3.jpg" class="thumb"></a></td>' +
+		'<td class="screenshot"><a href="images/wesnoth_4.jpg"><img src="images/wesnoth_4.jpg" class="thumb"></a></td>' +
+		'</tr>' +
+		'</table>' +
+		'</div>' +
+		'<div class="col-xs-12">' +
+		'<h3>Links</h3>' +
+		'<ul>' +
+		'<li><a href="https://github.com/wesnoth" target="_blank">GitHub Repo</a></li>' +
+		'<li><a href="wiki.wesnoth.org/DeveloperGuide" target="_blank">Developer Guide</a></li>' +
+		'</ul>' +
+		'</div>';
+	$("#mainModalBody").append(dataElement);
+}
+
 function resetMainModal(){
 	$("#mainModalLabel").html('');
 	$("#mainModalBody").html('');
